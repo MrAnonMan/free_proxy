@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html class="main_page">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title data-l10n-id="FREE proxy">FREE proxy</title>
+    <link href="../img/favicon.ico" rel="icon">
+    <link href="../core/libs/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="../core/libs/bootstrap/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="../core/libs/silkgrid/slick.grid.css" rel="stylesheet">
+    <link href="../core/libs/silkgrid/slick-default-theme.css" rel="stylesheet">
+    <link href="../css/panel.css" rel="stylesheet">
+</head>
+<body>
+<nav id="top_nav" class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-content">
+            <a href="https://plugtopus.agency" target="_blank"> <img src="../img/logo.png"></a>
+            <span class="dropdown pull-right">
+				<a id="mobile_dropdown_button" class="btn btn-default nav-link dropdown-toggle" type="button"
+                   data-toggle="dropdown">
+					<span class="glyphicon glyphicon-edit"></span>
+				</a>
+				<ul id="mobile_dropdown" aria-labelledby="dropdownMenu" role="menu" class="dropdown-menu">
+					<li><a class="navbar-link" href="/html/page_edit_proxy.html" data-l10n-id="Подключить свой Proxy">Подключить свой Proxy</a></li>
+					
+					<li class="delete_all"><a class="navbar-link deleteall"
+                                              href="/html/page_proxylist_delete.html"><span
+                            data-l10n-id="Удалить все Poxy">Удалить все Proxy </span></a></li>
+
+				</ul>
+			</span>
+
+        </div>
+    </div>
+</nav>
+<div id="content">
+
+    <div class="page" id="page_proxylist">
+        <div id="tablebox"></div>
+        <div id="emptysearchbox" class="container" style="display: none;"><span data-l10n-id="У Вас нет Proxy">У Вас нет Proxy</span>
+        </div>
+
+        <div id="emptylistbox" class="container" style="display: none;">
+
+            <br><br><br><br><br>
+
+            <center>
+                У Вас отсутствуют Proxy, вы можете <br>
+                <a href="/html/page_edit_proxy.html"> добавить свои </a><br><br>
+                Если Вы случайно удалили все free proxy то, просто переустановите расширение.<br>
+
+            </center>
+
+
+        </div>
+
+
+    </div>
+</div>
+
+<nav id="proxy_nav" class="navbar navbar-footer navbar-fixed-bottom" style="display: none;">
+
+    <div class="nav navbar-nav">
+        <a class="btn btn-gray btn-sm navbar-btn prev-proxy" href="#"><span
+                class="glyphicon glyphicon-arrow-left"></span>
+            <span class="txt" data-l10n-id=""></span></a>
+        <a class="btn btn-success btn-sm navbar-btn toogle-proxy" href="#">
+            <span class="proxyEnable"></span><span class="proxyEnable" data-l10n-id="Включить"> Включить</span>
+            <span class="proxyDisable"></span><span class="proxyDisable" data-l10n-id="Выключить"> Выключить</span>
+        </a>
+        <a class="btn btn-gray btn-sm navbar-btn next-proxy" href="#">
+            <span class="txt" data-l10n-id=""></span>
+            <span class="glyphicon glyphicon-arrow-right"></span></a>
+    </div>
+</nav>
+
+<div id="translations" class="hidden">
+    <span data-l10n-id="Флаг">Флаг</span>
+    <span data-l10n-id="Имя">Имя</span>
+    <span data-l10n-id="proxy_ip">Proxy IP</span>
+    <span data-l10n-id="no_label">No label</span>
+    <span data-l10n-id="edit">Edit</span>
+    <span data-l10n-id="remove">Remove</span>
+    <span data-l10n-id="unknown">Unknown</span>
+</div>
+
+
+<script src="../core/libs/jquery.min.js"></script>
+<script src="../core/libs/bootstrap/bootstrap.min.js"></script>
+<script src="../core/common_api.js"></script>
+<script src="../core/chrome_api.js"></script>
+<script src="../core/libs/util.js"></script>
+<script src="../core/libs/countries.js"></script>
+<script src="../core/libs/jquery.event.drag-2.2.js"></script>
+<script src="../core/libs/silkgrid/slick.core.js"></script>
+<script src="../core/libs/silkgrid/slick.dataview.js"></script>
+<script src="../core/libs/silkgrid/slick.grid.js"></script>
+<script src="../core/page_proxylist.js"></script>
+</body>
+</html>

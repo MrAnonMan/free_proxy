@@ -1,0 +1,36 @@
+{
+   "background": {
+      "page": "chrome/background.html",
+      "persistent": true
+   },
+   "browser_action": {
+      "default_icon": {
+         "128": "img/128.png",
+         "16": "img/18.png",
+         "18": "img/18.png",
+         "48": "img/48.png",
+         "64": "img/64.png"
+      },
+      "default_popup": "html/page_proxylist.html"
+   },
+   "default_locale": "ru",
+   "content_scripts": [ {
+      "js": [ "core/content_script_chrome.js" ],
+      "matches": [ "*://*/*" ]
+   } ],
+   "description": "__MSG_desc__",
+   "icons": {
+      "128": "img/128.png",
+      "16": "img/18.png",
+      "18": "img/18.png",
+      "48": "img/48.png",
+      "64": "img/64.png"
+   },
+   "manifest_version": 2,
+   "name": "__MSG_name__",
+   "permissions": [ "http://*/*", "https://*/*", "proxy", "contextMenus", "webRequest", "webRequestBlocking", "notifications", "tabs", "clipboardWrite", "clipboardRead", "privacy", "storage", "alarms", "\u003Call_urls>" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2018.4.2.1",
+   "author": "Plugtopus Agency",
+   "homepage_url": "https://plugtopus.agency"
+}
